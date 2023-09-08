@@ -1,26 +1,26 @@
 #include <stdio.h>
 /**
- * main - prints all possible different combinations of these digits
+ * main - prints all  different combi of these digits
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
-	int hundreds = '0';
+	int on = '0';
+	int ten = '0';
+	int hund = '0';
 
-	for (hundreds = '0'; hundreds <= '9'; hundreds++)
+	for (hund = '0'; hund <= '9'; hund++)
 	{
-		for (tens = '0'; tens <= '9'; tens++)
+		for (ten = '0'; ten <= '9'; ten++)
 		{
-			for (ones = '0'; ones <= '9'; ones++)
+			for (on = '0'; on <= '9'; on++)
 			{
-				if (!((ones == tens) || (tens == hundreds) || (tens > ones) || (hundreds > tens)))
+				if (!((on == ten) || (ten == hund) || (ten > on) || (hund > ten)))
 				{
-					putchar(hundreds);
-					putchar(tens);
-					putchar(ones);
-					if (!(ones == '9' && hundreds == '7' && tens == '8'))
+					putchar(hund);
+					putchar(ten);
+					putchar(on);
+					if (!(on == '9' && hund == '7' && ten == '8'))
 					{
 						putchar(',');
 						putchar(' ');
