@@ -3,7 +3,7 @@
 /**
  * main - prints the sum of even fabonacci numbers
  * less than 4000000.
- * Returns: nothing!
+ * Return: nothing!
  */
 int main(void)
 {
