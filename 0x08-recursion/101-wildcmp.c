@@ -1,4 +1,4 @@
-#includ "main.h"
+#include "main.h"
 /**
  * wildcmp - compares two string.
  * @s1: string 1.
