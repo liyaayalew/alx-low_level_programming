@@ -1,4 +1,9 @@
 #include "main.h"
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <stdlib.h>
 
 /**
  * create_file - prog creates a file 
@@ -24,7 +29,8 @@ int create_file(const char *filename, char *text_content)
 	if (!text_content)
 		text_content = "";
 
-	for (nletters = 0; text_content(nletters); nletters++);
+	for (nletters = 0; text_content(nletters); nletters++)
+		;
 
 	rwr = write(file_d, text_content, nletters);
 
